@@ -41,7 +41,7 @@ function Projects({ projects }: Props) {
 
               <div className="flex items-center space-x-2 justify-center">
                 {project?.technologies.map((technology) => (
-                  <img
+                  <motion.img
                     className="w-8 h-8"
                     key={technology._id}
                     src={urlFor(technology.image).url()}
