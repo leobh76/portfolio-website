@@ -31,10 +31,10 @@ export default function ExperienceCard({ experience }: Props) {
       />
 
       <div className="px-8 md:px-10">
-        <h4 className="text-4xl font-light">Full Stack Developer Intern</h4>
-        <p className="font-bold text-2xl mt-1">onezero</p>
+        <h4 className="text-4xl font-light">{experience?.jobTitle}</h4>
+        <p className="font-bold text-2xl mt-1">{experience?.company}</p>
         <div className="flex space-x-2 my-2">
-          {experience.technologies.map((technology) => (
+          {experience.technologies?.map((technology) => (
             <motion.img
               key={technology._id}
               className="w-10 h-10 rounded-full"
@@ -43,17 +43,10 @@ export default function ExperienceCard({ experience }: Props) {
           ))}
         </div>
         <p className="uppercase py-5 text-gray-300">
-          {"0" +
-            new Date(experience.dateStarted).getMonth() +
-            "/" +
-            new Date(experience.dateStarted).getFullYear()}{" "}
-          -{" "}
+          {new Date(experience.dateStarted).toLocaleDateString("CS-cs")} -{" "}
           {experience.isCurrentlyWorkingHere
             ? "Present"
-            : "0" +
-              new Date(experience.dateEnded).getMonth() +
-              "/" +
-              new Date(experience.dateEnded).getFullYear()}
+            : new Date(experience.dateEnded).toLocaleDateString("CS-cs")}
         </p>
 
         <ul className="list-disc space-y-4 ml-5 text-lg">

@@ -28,7 +28,7 @@ function Projects({ projects }: Props) {
               transition={{ duration: 1.2 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: false }}
-              src={urlFor(project.image).url()}
+              src={urlFor(project?.image).url()}
               alt=""
             />
 
