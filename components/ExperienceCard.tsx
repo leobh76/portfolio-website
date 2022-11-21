@@ -25,31 +25,31 @@ export default function ExperienceCard({ experience }: Props) {
         viewport={{
           once: true,
         }}
-        className=" w-28 h-28 rounded-full object-cover object-center bg-white"
+        className="xs:w-24 xs:h-24 rounded-full object-cover object-center bg-white"
         src={urlFor(experience?.companyImage).url()}
         alt=""
       />
 
       <div className="px-8 md:px-10">
-        <h4 className="text-4xl font-light">{experience?.jobTitle}</h4>
-        <p className="font-bold text-2xl mt-1">{experience?.company}</p>
-        <div className="flex space-x-2 my-2">
+        <h4 className="text-center xs:text-lg sm:text-xl lg:text-2xl xl:text-3xl font-light">{experience?.jobTitle}</h4>
+        <p className="text-center font-bold xs:text-lg sm:text-xl lg:text-2xl xl:text-3xl mt-1">{experience?.company}</p>
+        <div className="flex justify-center space-x-2 my-2">
           {experience.technologies?.map((technology) => (
             <motion.img
               key={technology._id}
-              className="w-10 h-10 rounded-full"
+              className="w-10 h-10 rounded-full mt-3 animate-pulse"
               src={urlFor(technology.image).url()}
             />
           ))}
         </div>
-        <p className="uppercase py-5 text-gray-300">
+        <p className="text-center xs:text-md sm:text-lg uppercase py-5 text-gray-300">
           {new Date(experience.dateStarted).toLocaleDateString("CS-cs")} -{" "}
           {experience.isCurrentlyWorkingHere
             ? "Present"
             : new Date(experience.dateEnded).toLocaleDateString("CS-cs")}
         </p>
 
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        <ul className=" list-none text-left space-y-4 ml-5 xs:text-sm sm:text-md md:text-lg px-5">
           {experience.points.map((point, i) => (
             <li key={i}>{point}</li>
           ))}

@@ -24,33 +24,33 @@ function ContactMe({}: Props) {
         Contact
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="xs:text-md sm:text-2xl font-semibold text-center mt-12">
           I would love to get to know you better!{" "}
           <span className="underline decoration-[#F7AB0A]/50">Get in touch.</span>
         </h4>
 
-        <div className="space-y-10">
-          <div className="flex items-center space-x-5 justify-center">
+        <div className="space-y-5">
+          <div className="flex items-center space-x-3 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+972532809884</p>
+            <p className="xs:text-md sm:text-2xl">+972532809884</p>
           </div>
 
-          <div className="flex items-center space-x-5 justify-center">
+          <div className="flex items-center space-x-3 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">lbhurovich@gmail.com</p>
+            <p className="xs:text-md sm:text-2xl">lbhurovich@gmail.com</p>
           </div>
 
-          <div className="flex items-center space-x-5 justify-center">
+          <div className="flex items-center space-x-3 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">Central District, Israel</p>
+            <p className="xs:text-md sm:text-2xl">Central District, Israel</p>
           </div>
         </div>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-fit mx-auto xs:w-[90%] sm:w-[90%]"
         >
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 xs:flex-col xs:space-x-0 xs:space-y-2">
             <input
               {...register("name")}
               placeholder="Name"
@@ -79,7 +79,7 @@ function ContactMe({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold"
+            className="bg-[#F7AB0A] py-3 px-10 rounded-md text-black font-bold"
           >
             Submit
           </button>

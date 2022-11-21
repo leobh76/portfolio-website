@@ -29,10 +29,10 @@ export default function Hero({ pageInfo }: Props) {
         alt=""
       />
       <div className="z-20">
-        <h2 className="text-lg uppercase text-gray-500 pb-2 tracking-[10px]">
+        <h2 className="xs:text-sm sm:text-lg md:text-xl uppercase text-gray-500 pb-2 tracking-[10px]">
           {pageInfo.role}
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="xs:text-xl sm:text-3xl md:text-3xl lg:text-5xl font-semibold px-10">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
