@@ -31,7 +31,7 @@ function Projects({ projects }: Props) {
                 <div
                   className="flex relative transition-all cursor-pointer 
                   hover:after:content-['Link_to_Build'] after:opacity-0
-                  hover:after:opacity-100 after:absolute after:text-xl after:scale-50 hover:after:scale-100  after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-gray-900/70 after:shadow-black/80 after:shadow-xl after:text-[#FFE55C]/90 after:px-4 after:py-2 after:mt-[6vh]
+                  hover:after:opacity-100 after:absolute after:text-lg after:scale-50 hover:after:scale-100 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-gray-900/70 after:shadow-black/40 after:shadow-md after:text-white/90 after:px-4 after:py-2 after:mt-[6vh]
                    2xl:after:mt-[3vh] after:rounded-full md:after:text-2xl hover:after:hover:underline after:transition-all"
                 >
                   <motion.img
