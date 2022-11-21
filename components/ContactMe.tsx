@@ -23,26 +23,26 @@ function ContactMe({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10">
-        <h4 className="xs:text-md sm:text-2xl font-semibold text-center mt-12">
+      <div className="flex flex-col space-y-8">
+        <h4 className="xs:text-md sm:text-2xl font-semibold text-center">
           I would love to get to know you better!{" "}
           <span className="underline decoration-[#F7AB0A]/50">Get in touch.</span>
         </h4>
 
-        <div className="space-y-5">
+        <div className="space-y-3">
           <div className="flex items-center space-x-3 justify-center">
-            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="xs:text-md sm:text-2xl">+972532809884</p>
+            <PhoneIcon className="text-[#F7AB0A] h-5 w-5 animate-pulse" />
+            <p className="xs:text-sm sm:text-xl">+972532809884</p>
           </div>
 
           <div className="flex items-center space-x-3 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="xs:text-md sm:text-2xl">lbhurovich@gmail.com</p>
+            <EnvelopeIcon className="text-[#F7AB0A] h-5 w-5 animate-pulse" />
+            <p className="xs:text-sm sm:text-xl">lbhurovich@gmail.com</p>
           </div>
 
           <div className="flex items-center space-x-3 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="xs:text-md sm:text-2xl">Central District, Israel</p>
+            <MapPinIcon className="text-[#F7AB0A] h-5 w-5 animate-pulse" />
+            <p className="xs:text-sm sm:text-xl">Central District, Israel</p>
           </div>
         </div>
 

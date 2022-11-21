@@ -61,7 +61,6 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
         <footer className="absolute bottom-5 w-full cursor-pointer">
           <div className="flex flex-col items-center justify-center">
             <ChevronDoubleUpIcon className="h-7 w-7 bg-gray-800 animate-bounce rounded-full p-1  border border-white/50 filter sepia hover:sepia-0 cursor-pointer" />
-            <p className="text-xs text-gray-400">Back to top</p>
           </div>
         </footer>
       </Link>
@@ -77,7 +76,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const skills: Skill[] = await fetchSkills();
   const projects: Project[] = await fetchProjects();
   const socials: Social[] = await fetchSocial();
-  
+
   return {
     props: {
       pageInfo,
@@ -90,20 +89,20 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   };
 };
 
-  // export const getServerSideProps: GetServerSideProps = async () => {
-  //   const pageInfo = await fetchPageInfo();
-  //   const experiences = await fetchExperiences();
-  //   const skills = await fetchSkills();
-  //   const projects = await fetchProjects();
-  //   const socials = await fetchSocial();
-  
-  //   return {
-  //     props: {
-  //       pageInfo,
-  //       experiences,
-  //       skills,
-  //       projects,
-  //       socials,
-  //     },
-  //   };
-  // };
+// export const getServerSideProps: GetServerSideProps = async () => {
+//   const pageInfo = await fetchPageInfo();
+//   const experiences = await fetchExperiences();
+//   const skills = await fetchSkills();
+//   const projects = await fetchProjects();
+//   const socials = await fetchSocial();
+
+//   return {
+//     props: {
+//       pageInfo,
+//       experiences,
+//       skills,
+//       projects,
+//       socials,
+//     },
+//   };
+// };
