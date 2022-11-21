@@ -84,7 +84,7 @@ function ContactMe({}: Props) {
             Submit
           </button>
         </form>
-        <p className="text-center text-sm font-light text-gray-400">This is a full stack website and was built using:<br></br><span className="text-gray-300">Next.js, Tailwind CSS, Sanity CMS & more</span></p>
+        <p className="text-center text-xs font-light text-gray-400">This is a full stack website and was built using:<br></br><span className="text-gray-300">Next.js, Tailwind CSS, Sanity CMS & more</span></p>
       </div>
     </div>
   );

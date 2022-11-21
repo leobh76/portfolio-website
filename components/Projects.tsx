@@ -37,7 +37,7 @@ function Projects({ projects }: Props) {
             />
 
             <div className="space-y-6 max-w-6xl">
-              <h4 className="xs:text-2xl sm:text-3xl font-semibold text-center">
+              <h4 className="xs:text-lg sm:text-2xl font-semibold text-center">
                 <Link href={project?.linkToBuild} passHref>
                   <a className="underline decoration-[#F7AB0A]/50">
                     {project?.title}

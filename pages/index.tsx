@@ -58,10 +58,10 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       </section>
 
       <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
+        <footer className="absolute bottom-5 w-full cursor-pointer">
           <div className="flex flex-col items-center justify-center">
-            <ChevronDoubleUpIcon className="h-10 w-10 bg-gray-800 animate-bounce rounded-full p-2 border border-white/50 filter sepia hover:sepia-0 cursor-pointer" />
-            <p className="text-xs pt-2 text-gray-400">Back to top</p>
+            <ChevronDoubleUpIcon className="h-7 w-7 bg-gray-800 animate-bounce rounded-full p-1  border border-white/50 filter sepia hover:sepia-0 cursor-pointer" />
+            <p className="text-xs text-gray-400">Back to top</p>
           </div>
         </footer>
       </Link>
