@@ -27,7 +27,8 @@ type Props = {
 const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
     <div className=" bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scrollbar  scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
-      <Head>
+      Hello World
+      {/* <Head>
         <title>Leonardo - Portfolio</title>
       </Head>
 
@@ -64,7 +65,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
             <p className="text-xs pt-2 text-gray-400">Back to top</p>
           </div>
         </footer>
-      </Link>
+      </Link> */}
     </div>
   );
 };
@@ -89,21 +90,21 @@ export default Home;
 //   };
 // };
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
-  const experiences: Experience[] = await fetchExperiences();
-  const skills: Skill[] = await fetchSkills();
-  const projects: Project[] = await fetchProjects();
-  const socials: Social[] = await fetchSocial();
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   const pageInfo: PageInfo = await fetchPageInfo();
+//   const experiences: Experience[] = await fetchExperiences();
+//   const skills: Skill[] = await fetchSkills();
+//   const projects: Project[] = await fetchProjects();
+//   const socials: Social[] = await fetchSocial();
 
-  return {
-    props: {
-      pageInfo,
-      experiences,
-      skills,
-      projects,
-      socials,
-    },
-    revalidate: 10,
-  };
-};
+//   return {
+//     props: {
+//       pageInfo,
+//       experiences,
+//       skills,
+//       projects,
+//       socials,
+//     },
+//     revalidate: 10,
+//   };
+// };
