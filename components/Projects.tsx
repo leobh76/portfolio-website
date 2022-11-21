@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Project } from "../typings";
 import { urlFor } from "../sanity";
+import Link from "next/link";
 
 type Props = {
   projects: Project[];
@@ -21,16 +22,30 @@ function Projects({ projects }: Props) {
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin">
         {projects?.map((project, i) => (
-          <div key={project._id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
-            <motion.img
-              className="w-50 max-h-96 object-cover rounded-xl shadow-sm"
-              initial={{ y: -300, opacity: 0 }}
-              transition={{ duration: 1.2 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: false }}
-              src={urlFor(project?.image).url()}
-              alt=""
-            />
+          <div
+            key={project._id}
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
+          >
+            <Link href={project?.linkToBuild} passHref>
+              <a target="_blank">
+                <div
+                  className="flex relative transition-all cursor-pointer 
+                  hover:after:content-['Link_to_Build'] after:opacity-0
+                  hover:after:opacity-100 after:absolute after:text-xl after:scale-50 hover:after:scale-100  after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-gray-900/70 after:shadow-black/80 after:shadow-xl after:text-[#FFE55C]/90 after:px-4 after:py-2 after:mt-[6vh]
+                   2xl:after:mt-[3vh] after:rounded-full md:after:text-2xl hover:after:hover:underline after:transition-all"
+                >
+                  <motion.img
+                    className="w-50 max-h-96 object-cover rounded-xl shadow-sm"
+                    initial={{ y: -300, opacity: 0 }}
+                    transition={{ duration: 1.2 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    src={urlFor(project?.image).url()}
+                    alt=""
+                  />
+                </div>
+              </a>
+            </Link>
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
