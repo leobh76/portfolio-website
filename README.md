@@ -3,6 +3,8 @@
 
 ![Three_Smartphone_Screens_Mockup_copy](https://user-images.githubusercontent.com/105162659/203791388-e96b3538-0dac-44aa-8dc3-c03f41a7d352.png)
 
+#### [Deployed App url](http://portfolio-website-leobh76.vercel.app) (deployed using Vercel)
+
 ### Technologies used:
 - Next.js, Tailwind CSS, Sanity CMS & more.
 
