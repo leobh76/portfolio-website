@@ -6,7 +6,7 @@
 #### [Deployed App url](http://portfolio-website-leobh76.vercel.app) (deployed using Vercel)
 
 ### Technologies used:
-- Next.js, Tailwind CSS, Sanity CMS & more.
+- Next.js (with TypeScript), Tailwind CSS, Sanity CMS & more.
 
 ### To run the project:
 - Clone the repo!
