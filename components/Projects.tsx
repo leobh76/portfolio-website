@@ -49,7 +49,7 @@ function Projects({ projects }: Props) {
 
             <div className="space-y-6 max-w-6xl">
               <h4 className="xs:text-lg sm:text-2xl font-semibold text-center underline decoration-[#F7AB0A]/50">
-                {project?.title}
+                Project {i + 1} of {projects?.length}: {project?.title}
               </h4>
 
               <div className="flex items-center space-x-2 justify-center">
